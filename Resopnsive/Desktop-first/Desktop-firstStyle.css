@@ -1,0 +1,103 @@
+main{
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        border: 1px solid darkblue;
+        .box1{
+            background-color: lightblue;
+            border: 1px solid darkblue;
+            grid-area: 1/1/2/7;
+        }
+        .box2{
+            background-color: rgb(231, 191, 251);
+            border: 1px solid darkblue;
+            grid-area: 2/1/6/2;
+        }
+        .box3{
+            background-color: rgb(204, 245, 210);
+            border: 1px solid darkblue;
+            grid-area: 2/2/6/6;
+        }
+        .box4{
+            background-color: rgb(240, 239, 187);
+            border: 1px solid darkblue;
+            grid-area: 2/6/6/7;
+        }
+        .box5{
+            background-color: lightblue;
+            border: 1px solid darkblue;
+            grid-area: 6/1/7/7;
+        }
+    }
+@media all and (min-width: 481px) and (max-width: 768px){
+    main{
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+        border: 1px solid darkblue;
+        .box1{
+            background-color: lightblue;
+            border: 1px solid darkblue;
+            grid-area: 1/1/2/3;
+        }
+        .box2{
+            background-color: rgb(231, 191, 251);
+            border: 1px solid darkblue;
+            grid-area: 2/1/5/2;
+        }
+        .box3{
+            background-color: rgb(204, 245, 210);
+            border: 1px solid darkblue;
+            grid-area: 5/1/7/3;
+        }
+        .box4{
+            background-color: rgb(240, 239, 187);
+            border: 1px solid darkblue;
+            grid-area: 2/2/5/3;
+        }
+        .box5{
+            background-color: lightblue;
+            border: 1px solid darkblue;
+            grid-area: 7/1/8/3;
+        }
+    }
+}
+@media all and (max-width: 480px){
+    main{
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(10, 1fr);
+        border: 1px solid darkblue;
+        .box1{
+            background-color: lightblue;
+            border: 1px solid darkblue;
+            grid-area: 1/1/2/2;
+        }
+        .box2{
+            background-color: rgb(231, 191, 251);
+            border: 1px solid darkblue;
+            grid-area: 2/1/4/2;
+        }
+        .box3{
+            background-color: rgb(204, 245, 210);
+            border: 1px solid darkblue;
+            grid-area: 4/1/8/2;
+        }
+        .box4{
+            background-color: rgb(240, 239, 187);
+            border: 1px solid darkblue;
+            grid-area: 8/1/10/2;
+        }
+        .box5{
+            background-color: lightblue;
+            border: 1px solid darkblue;
+            grid-area: 10/1/11/2;
+        }
+    }
+}
