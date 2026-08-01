@@ -3,11 +3,11 @@ var arr = [1, 2, 8, 5, 12, 30, 10];
 var max = arr[0];
 var min = arr[0];
 for(var i = 0; i < arr.length; i++){
-    if(arr[i] > max){
-        max = arr[i];
+    if(arr[i]%2 === 0){
+        if(max === undefined || max < arr [i]) max = arr[i];
     }
-    else if(arr[i] < min){
-        min = arr[i];
+    else if(arr[i]%2 === 1){
+        if(min === undefined || min > arr [i]) min = arr[i];
     }
 }
 console.log("max = ", max);
