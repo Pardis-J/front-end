@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Product Manager</h2>
+    <div class="add">
+      <input type="text" class="add-product" placeholder="Name"/>
+      <input type="text" class="add-product" placeholder="Category"/>
+      <input type="text" class="add-product" placeholder="Price" />
+      <input type="text" class="add-product" placeholder="Quantity"/>
+      <button type="submit" onclick="addProduct()">Add</button>
+    </div>
+    <div class="search">
+      <input type="text" id="search-name" placeholder="Search by name" onkeydown="if(event.key === 'Enter') searchByName(event)"/>
+      <div class="category-search">
+        <div class="default-category-search">
+          <span id="main-option">All</span>
+          <button onclick="options()">
+            <svg
+              viewBox="0 0 24 24"
+              width="14px"
+              height="11px"
+              fill="currentColor"
+              class="block"
+            >
+              <path
+                d="M21.266 7.302a.75.75 0 0 1 1.037 1.08l-.069.066-9.75 8.25a.75.75 0 0 1-.89.058l-.078-.058-9.75-8.25a.75.75 0 0 1 .893-1.202l.075.056L12 15.142l9.266-7.84Z"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <div class="all-category-search hide" id="all-category-search">
+          <div class="new-category" id="new-category">
+            <span class="option hide" id="default" onclick="searchByCategory(this)">All</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="list">
+      <div class="top-list">
+        <div>Name</div>
+        <div>Category</div>
+        <div>Price</div>
+        <div>Quantity</div>
+        <div>Action</div>
+      </div>
+      <div class="product-list" id="product-list"></div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
